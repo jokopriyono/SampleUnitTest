@@ -1,6 +1,6 @@
 package com.jo.sampleunittest
 
-class MainViewModel (val cuboidModel: CuboidModel) {
+class MainViewModel(private val cuboidModel: CuboidModel) {
 
     fun save(length: Double, width: Double, height: Double) {
         cuboidModel.save(width, length, height)

@@ -1,10 +1,9 @@
 package com.jo.sampleunittest
 
-
 class CuboidModel {
-    var width: Double = 0.toDouble()
-    var length: Double = 0.toDouble()
-    var height: Double = 0.toDouble()
+    private var width: Double = 0.toDouble()
+    private var length: Double = 0.toDouble()
+    private var height: Double = 0.toDouble()
 
     val volume: Double
         get() = width * length * height
@@ -16,7 +15,6 @@ class CuboidModel {
             val lh = length * height
             return 2 * (wl + wh + lh)
         }
-
     val circumference: Double
         get() = 4 * (width * length * height)
 
